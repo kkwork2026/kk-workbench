@@ -9,7 +9,7 @@
 <title>KK工作台 🌸</title>
 <script>
   /* 版本自检：检测到新版本自动刷新，避免手机缓存旧页面 */
-  window.APP_VER = "20260729.2";
+  window.APP_VER = "20260729.3";
   (function(){
     try {
       if (sessionStorage.getItem('kk_reloaded') === '1') return;
@@ -675,8 +675,7 @@ function computeAnniDays(dateStr){
 function renderAnni(){
   const dateStr = loadAnni();
   const setBtn = document.getElementById("anniSetBtn");
-  const editor = document.getElementById("anniEditor");
-  if(editor) editor.hidden = true;
+  // 注意：不在自动刷新时强行隐藏编辑器，避免打断正在输入
   if(!dateStr){
     document.getElementById("anniLabel").textContent = "还没有记录初见日期哦～";
     document.getElementById("anniDays").textContent = "❔";
