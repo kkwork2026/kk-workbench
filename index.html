@@ -3,7 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>KK工作台 🌸</title>
+<script>
+  /* 版本自检：检测到新版本自动刷新，避免手机缓存旧页面 */
+  window.APP_VER = "20260729.2";
+  (function(){
+    try {
+      if (sessionStorage.getItem('kk_reloaded') === '1') return;
+      fetch('version.json?v=' + Date.now(), {cache:'no-store'})
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(j){
+          if (j && j.ver && j.ver !== window.APP_VER) {
+            sessionStorage.setItem('kk_reloaded','1');
+            location.reload(true);
+          }
+        }).catch(function(){});
+    } catch(e){}
+  })();
+</script>
 <link rel="manifest" href="./pwa/manifest.json">
 <link rel="apple-touch-icon" href="./pwa/apple-touch-icon.png">
 <meta name="theme-color" content="#ff9ec4">
@@ -121,6 +141,8 @@
   .plan-item .del:hover { color:#ff6fa5; }
 
   .footer { text-align:center; font-size:12px; color:#d3a0b6; padding:20px 0 10px; }
+  .refresh-fab { position:fixed; right:14px; bottom:16px; z-index:60; width:46px; height:46px; border-radius:50%; border:none; background:#ff8fb7; color:#fff; font-size:20px; box-shadow:0 4px 12px rgba(255,143,183,.5); cursor:pointer; }
+  .refresh-fab:active { transform:scale(.92); }
   details summary { cursor:pointer; font-size:13px; color:#ff6fa5; font-weight:bold; padding:6px 0;}
   .weekplan li { font-size:12.5px; color:#b487a0; line-height:1.9; list-style:none; }
 
@@ -461,6 +483,7 @@
   </div>
 
   <div class="footer">🌸 KK工作台 · 数据存你手机本地 · 可一键备份导出 · 换网站也不丢 · 由小K定时更新 🌸</div>
+  <button class="refresh-fab" id="refreshFab" title="强制刷新页面（清缓存）" onclick="location.reload(true)">🔄</button>
 </div>
 
 
