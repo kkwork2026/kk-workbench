@@ -1,0 +1,12 @@
+# 其他托管平台的配置文件，Gitee Pages 不需要
+_headers
+edgeone.json
+
+# 打包产物
+*.zip
+
+# 依赖
+node_modules/
+
+# 本地项目记忆（不推到公开仓库）
+.workbuddy/
