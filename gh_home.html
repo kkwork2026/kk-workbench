@@ -504,13 +504,6 @@ async function kvKeys(prefix){ try{ const db=await _idb(); return await new Prom
 async function restoreFromIDB(){ try{ const keys=await kvKeys('kk_'); for(const k of keys){ if(localStorage.getItem(k)===null){ const v=await kvGet(k); if(v!==null) localStorage.setItem(k, typeof v==='string'?v:JSON.stringify(v)); } } renderSchedule(); renderChk(); renderAnni(); renderBudget(); renderPlanBoard(); }catch(e){} }
 const todayKey = () => { const d=new Date(); return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); };
 
-/* ---------- 集中声明所有存储 key 常量（必须在任何调用前，避免 const TDZ 报错） ---------- */
-const SCHEDULE_KEY = () => "kk_schedule_" + todayKey();
-const ANNI_KEY = "kk_anniversary";
-const BUDGET_KEY = "kk_budget_" + todayKey();
-const PLAN_KEY = "kk_planboard";
-const AUTO_BK_KEY = "kk_autobackup";
-
 /* ---------- 日期 ---------- */
 const now = new Date();
 const weeks = ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
@@ -592,6 +585,7 @@ async function loadWeather(){
 loadWeather();
 
 /* ---------- 今日安排事项表 ---------- */
+const SCHEDULE_KEY = () => "kk_schedule_" + todayKey();
 function loadSchedule(){ try{ return JSON.parse(localStorage.getItem(SCHEDULE_KEY())) || null }catch(e){ return null } }
 function saveSchedule(a){ const _v=JSON.stringify(a); localStorage.setItem(SCHEDULE_KEY(), _v); kvSet(SCHEDULE_KEY(), _v); maybeAutoBackup(); }
 
@@ -641,6 +635,7 @@ renderSchedule();
 renderChk();
 
 /* ---------- KK与YY纪念日 ---------- */
+const ANNI_KEY = "kk_anniversary";
 function loadAnni(){ return localStorage.getItem(ANNI_KEY) || ""; }   // "YYYY-MM-DD" 或 ""
 function saveAnni(d){ localStorage.setItem(ANNI_KEY, d); kvSet(ANNI_KEY, d); maybeAutoBackup(); }
 function computeAnniDays(dateStr){
@@ -694,6 +689,7 @@ renderAnni();
 setInterval(renderAnni, 60000);   // 每分钟自动刷新，天数随时间实时增长
 
 /* ---------- 每日记账 ---------- */
+const BUDGET_KEY = "kk_budget_" + todayKey();
 function loadBudget(){ try{ return JSON.parse(localStorage.getItem(BUDGET_KEY)) || null }catch(e){ return null } }
 function saveBudget(a){ const _v=JSON.stringify(a); localStorage.setItem(BUDGET_KEY, _v); kvSet(BUDGET_KEY, _v); maybeAutoBackup(); }
 function initBudget(){
@@ -734,6 +730,7 @@ function addBudget(){
 initBudget();
 
 /* ---------- 近期规划表（仪表盘与侧栏共享 kk_planboard 数据） ---------- */
+const PLAN_KEY = "kk_planboard";
 function loadBoard(){ try{ return JSON.parse(localStorage.getItem(PLAN_KEY)) || null }catch(e){ return null } }
 function saveBoard(a){ const _v=JSON.stringify(a); localStorage.setItem(PLAN_KEY, _v); kvSet(PLAN_KEY, _v); maybeAutoBackup(); }
 function initPlan(){
@@ -771,6 +768,7 @@ function addPlanFromInput(inputId, deadlineId){
 initPlan();
 
 /* ---------- 数据备份 / 恢复（跨网站不丢数据） ---------- */
+const AUTO_BK_KEY = "kk_autobackup";
 let _lastBk = 0;
 function collectUserData(){
   const out = { _app:"KK工作台", _ver:1, _ts:Date.now(), data:{} };
