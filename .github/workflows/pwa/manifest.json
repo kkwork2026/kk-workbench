@@ -1,0 +1,16 @@
+{
+  "name": "KK工作台",
+  "short_name": "KK工作台",
+  "description": "小K为 kk 打造的粉色系每日打卡工作台",
+  "start_url": "https://kkwork2026.github.io/kk-workbench/",
+  "scope": "/kk-workbench/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff5f8",
+  "theme_color": "#ff8fb3",
+  "icons": [
+    { "src": "./kk-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./kk-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
+  ]
+}

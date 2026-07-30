@@ -1,0 +1,46 @@
+name: Daily KK Workbench Fetch
+
+on:
+  schedule:
+    - cron: '30 0 * * *'   # 北京时间 08:30 (UTC 00:30) -> 运动
+    - cron: '0 1 * * *'    # 北京时间 09:00 (UTC 01:00) -> 美食+新闻+招聘
+    - cron: '30 9 * * *'   # 北京时间 17:30 (UTC 09:30) -> 钓鱼(周五/法定节假日)
+  workflow_dispatch:
+    inputs:
+      tasks:
+        description: '要运行的任务，逗号分隔: food,news,jobs,fitness,fishing，或 all'
+        required: false
+        default: 'all'
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run daily fetch
+        env:
+          ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
+          TASKS: ${{ github.event.inputs.tasks }}
+        run: node scripts/daily-fetch.js
+
+      - name: Commit and push
+        run: |
+          git config user.name "kk-bot"
+          git config user.email "bot@kk.work"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/kkwork2026/kk-workbench.git
+          git add -A
+          git commit -m "daily fetch $(TZ=Asia/Shanghai date +%Y%m%d.%H%M)" || echo "no changes"
+          git push
