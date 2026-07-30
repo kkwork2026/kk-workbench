@@ -1,76 +1,76 @@
 window.KK_DATA = window.KK_DATA || {};
 window.KK_DATA.food = {
-  updatedAt: "2026-07-30 11:41",
-  items: [
+  "updatedAt": "2026-07-30 12:12",
+  "items": [
     {
-      title: "小炒牛肉（青椒小米辣版）",
-      desc: "牛里脊切薄片，加料酒、生抽、淀粉、黑胡椒抓匀腌15分钟；热油滑炒至变色盛出，留底油爆香姜蒜和小米辣，下青椒块翻炒后回锅牛肉，加盐大火快炒即成。腌肉加淀粉锁水更嫩。",
-      source: "小红书",
-      url: "https://www.xiaohongshu.com/search_result?keyword=%E5%B0%8F%E7%82%92%E7%89%9B%E8%82%89%20%E4%B8%A4%E4%BA%BA%E9%A3%9F",
-      tag: "下饭硬菜"
+      "title": "番茄炒蛋",
+      "desc": "鸡蛋打散，加入番茄块，炒至蛋熟番茄出汁",
+      "source": "小红书",
+      "tag": "快手8分钟",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=%E7%95%AA%E8%8C%84%E7%82%92%E8%9B%8B%20%E5%81%9A%E6%B3%95"
     },
     {
-      title: "酸菜炒肉（下饭王）",
-      desc: "肉片加料酒、生抽、淀粉腌10分钟；酸菜过水挤干切细。油热下蒜末辣椒，肉片滑散炒变色盛出，酸菜大火炒2分钟回肉，少盐快炒出锅。8分钟搞定，酸菜本身咸、盐要少放。",
-      source: "抖音",
-      url: "https://www.douyin.com/search/%E9%85%B8%E8%8F%9C%E7%82%92%E8%82%89%20%E4%BA%8C%E4%BA%BA%E9%A3%9F%20%E5%AE%B6%E5%B8%B8%E8%8F%9C",
-      tag: "快手8分钟"
+      "title": "蒜蓉西兰花",
+      "desc": "西兰花焯水后，加入蒜末、辣椒翻炒",
+      "source": "抖音",
+      "tag": "低脂高蛋白",
+      "url": "https://www.douyin.com/search/%E8%92%9C%E8%93%89%E8%A5%BF%E5%85%B0%E8%8A%B1%20%E5%81%9A%E6%B3%95"
     },
     {
-      title: "香煎巴沙鱼（零失败）",
-      desc: "巴沙鱼柳用纸巾擦干，抹料酒+盐+柠檬汁腌15分钟；平底锅少油中小火慢煎，别频繁翻动，一面金黄再翻面，出锅撒黑胡椒。鱼柳擦干再腌表皮更焦香，新手零失败。",
-      source: "小红书",
-      url: "https://www.xiaohongshu.com/search_result?keyword=%E9%A6%99%E7%85%8E%E5%B7%B4%E6%B2%99%E9%B1%BC%20%E7%AE%80%E5%8D%95%E6%99%9A%E9%A4%90",
-      tag: "低脂高蛋白"
+      "title": "宫保鸡丁",
+      "desc": "鸡丁用淀粉、料酒腌制，炒制时加入花生米、辣椒",
+      "source": "小红书",
+      "tag": "下饭硬菜",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=%E5%AE%AB%E4%BF%9D%E9%B8%A1%E4%B8%81%20%E5%81%9A%E6%B3%95"
     },
     {
-      title: "照烧鸡腿",
-      desc: "鸡腿去骨拍松，加料酒、姜蒜、盐、胡椒粉腌20分钟；鸡皮朝下中小火煎至两面金黄，倒照烧酱小火焖煮，多次翻面上色，收汁切片。配米饭绝了。",
-      source: "抖音",
-      url: "https://www.douyin.com/search/%E7%85%A7%E7%83%A7%E9%B8%A1%E8%85%BF%20%E5%81%9A%E6%B3%95%20%E7%AE%80%E5%8D%95",
-      tag: "两人食经典"
+      "title": "酸辣土豆丝",
+      "desc": "土豆丝焯水后，加入辣椒、醋、生抽翻炒",
+      "source": "抖音",
+      "tag": "快手8分钟",
+      "url": "https://www.douyin.com/search/%E9%85%B8%E8%BE%A3%E5%9C%9F%E8%B1%86%E4%B8%9D%20%E5%81%9A%E6%B3%95"
     },
     {
-      title: "炒合菜（豆芽韭菜粉丝）",
-      desc: "粉丝温水泡软切段，鸡蛋炒熟盛出；爆香蒜末，下胡萝卜丝炒软，加绿豆芽、粉丝翻炒，生抽蚝油调味，最后放韭菜和鸡蛋快炒出锅。韭菜最后放保持脆嫩。",
-      source: "小红书",
-      url: "https://www.xiaohongshu.com/search_result?keyword=%E7%82%92%E5%90%88%E8%8F%9C%20%E5%AE%B6%E5%B8%B8%E5%81%9A%E6%B3%95",
-      tag: "清爽素菜"
+      "title": "青椒肉丝",
+      "desc": "肉丝用淀粉、生抽腌制，与青椒同炒，加酱油调味",
+      "source": "小红书",
+      "tag": "下饭硬菜",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=%E9%9D%92%E6%A4%92%E8%82%89%E4%B8%9D%20%E5%81%9A%E6%B3%95"
     },
     {
-      title: "莲藕炒肉（脆爽解腻）",
-      desc: "脆藕切薄片泡清水（加几滴白醋防发黑），肉片生抽腌5分钟；油热下蒜末辣椒，肉片炒变色，下藕片大火快炒1分钟，加蚝油少盐，藕断生就关火撒葱段。想更脆可先焯水10秒过凉。",
-      source: "抖音",
-      url: "https://www.douyin.com/search/%E8%8E%B2%E8%97%95%E7%82%92%E8%82%89%20%E5%AE%B6%E5%B8%B8%E8%8F%9C%20%E7%AE%80%E5%8D%95",
-      tag: "快手7分钟"
+      "title": "红烧茄子",
+      "desc": "茄子切块，煎至两面金黄，加入调料炖煮",
+      "source": "抖音",
+      "tag": "快手8分钟",
+      "url": "https://www.douyin.com/search/%E7%BA%A2%E7%83%A7%E8%8C%84%E5%AD%90%20%E5%81%9A%E6%B3%95"
     },
     {
-      title: "肉末蒸蛋",
-      desc: "鸡蛋打散加盐，按1:1.5加温水搅匀过滤泡沫，盖保鲜膜中小火蒸8-10分钟；另起锅炒香猪肉末，加生抽、蚝油调味，铺在蛋羹上再蒸3-5分钟。嫩滑如布丁，老人小孩都爱。",
-      source: "小红书",
-      url: "https://www.xiaohongshu.com/search_result?keyword=%E8%82%89%E6%9C%AB%E8%92%B8%E8%9B%8B%20%E5%AB%A9%E6%BB%91%E5%81%9A%E6%B3%95",
-      tag: "新手友好"
+      "title": "清炒时蔬",
+      "desc": "选择时令蔬菜，快速翻炒，简单调味",
+      "source": "小红书",
+      "tag": "快手8分钟",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=%E6%B8%85%E7%82%92%E6%97%B6%E8%94%AC%20%E5%81%9A%E6%B3%95"
     },
     {
-      title: "番茄土豆炖肥牛",
-      desc: "肥牛焯水捞出；炒香洋葱姜蒜，下番茄块炒出汁，加番茄酱、生抽、糖，倒清水炖开后下土豆块煮15-20分钟，最后回肥牛大火收汁。酸甜浓郁，汤汁拌饭一绝。",
-      source: "抖音",
-      url: "https://www.douyin.com/search/%E7%95%AA%E8%8C%84%E5%9C%9F%E8%B1%86%E8%82%A5%E7%89%9B%20%E5%81%9A%E6%B3%95",
-      tag: "一锅炖"
+      "title": "麻婆豆腐",
+      "desc": "豆腐切块，加入豆瓣酱、辣椒炒制，加花椒提味",
+      "source": "抖音",
+      "tag": "下饭硬菜",
+      "url": "https://www.douyin.com/search/%E9%BA%BB%E5%A9%86%E8%B1%86%E8%85%90%20%E5%81%9A%E6%B3%95"
     },
     {
-      title: "青椒肉丝炒面+番茄蛋花汤",
-      desc: "肉丝炒变色加生抽，依次下豆芽、青椒丝、洋葱丝炒断生；面条煮9分熟捞入锅中加盐同炒，撒蒜末葱花出锅。配汤：番茄炒软加开水，放紫菜淋蛋液加盐即成。一主食一汤，晚餐轻松搞定。",
-      source: "小红书",
-      url: "https://www.xiaohongshu.com/search_result?keyword=%E4%B8%A4%E4%BA%BA%E9%A3%9F%20%E7%82%92%E9%9D%A2%20%E6%99%9A%E9%A4%90",
-      tag: "主食+汤"
+      "title": "鸡蛋汤",
+      "desc": "鸡蛋打散，加入清水煮沸，调味后即可食用",
+      "source": "小红书",
+      "tag": "快手8分钟",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=%E9%B8%A1%E8%9B%8B%E6%B1%A4%20%E5%81%9A%E6%B3%95"
     },
     {
-      title: "凉拌黄瓜（万能凉拌汁）",
-      desc: "黄瓜拍碎切段，加盐腌10分钟挤干水分；蒜末、小米辣、白芝麻淋热油激香，加生抽2勺、醋2勺、蚝油1勺、糖半勺、香油1勺拌匀，倒入黄瓜拌匀即成。夏天开胃解腻必备。",
-      source: "抖音",
-      url: "https://www.douyin.com/search/%E5%87%89%E6%8B%8C%E9%BB%84%E7%93%9C%20%E4%B8%87%E8%83%BD%E6%96%99%E6%B1%81",
-      tag: "开胃凉菜"
+      "title": "番茄炖牛腩",
+      "desc": "牛腩切块，与番茄同炖，加入香料调味",
+      "source": "抖音",
+      "tag": "下饭硬菜",
+      "url": "https://www.douyin.com/search/%E7%95%AA%E8%8C%84%E7%82%96%E7%89%9B%E8%85%A9%20%E5%81%9A%E6%B3%95"
     }
   ]
 };
