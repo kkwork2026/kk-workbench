@@ -1,17 +1,56 @@
-// 最新新闻（仅来自央视新闻，由小K定时更新，每天 9:00）
 window.KK_DATA = window.KK_DATA || {};
 window.KK_DATA.news = {
-  updatedAt: "2026-07-30 11:40",
+  updatedAt: "2026-07-30 11:41",
   items: [
-    { title: "【感知中国经济新活力】中国制造凸显新优势 上半年进出口首破25万亿元", source: "央视新闻", url: "https://news.cctv.com/" },
-    { title: "十五五交通网新变化：国家综合立体交通网主骨架建成率已达91%", source: "央视新闻", url: "https://news.cctv.com/" },
-    { title: "夏日避暑游升温 多元业态激发暑期文旅消费活力", source: "央视新闻", url: "https://news.cctv.com/" },
-    { title: "反网络暴力法公开征求意见 预防惩治网络暴力", source: "央视新闻", url: "https://news.cctv.com/" },
-    { title: "2026年度电影总票房突破220亿元 《飞驰人生3》等领跑", source: "央视新闻", url: "https://news.cctv.com/" },
-    { title: "我国成功发射通信技术试验卫星二十七号A/B星（7月30日9时）", source: "央视新闻", url: "https://tv.cctv.com/2026/07/30/VIDEBDnpDojtJs0KoZ4dnajE260730.shtml" },
-    { title: "C919高原型首架机完成首次飞行试验", source: "央视新闻", url: "https://news.cctv.com/" },
-    { title: "月之暗面宣布旗舰大模型 Kimi K3 全量开源 总参数2.8万亿", source: "央视新闻", url: "https://news.cctv.com/" },
-    { title: "中央宣传部授予王戟时代楷模称号", source: "央视新闻", url: "https://news.cctv.com/" },
-    { title: "中央气象台继续发布强对流蓝色预警 多地有大到暴雨", source: "央视新闻", url: "https://news.cctv.com/" }
+    {
+      title: "全国大范围降雨持续 各地积极应对，8条河流仍维持超警",
+      source: "央视新闻",
+      url: "https://news.cctv.com/2026/07/30/ARTIuxiQNarFT5fZaV03wZpW260730.shtml"
+    },
+    {
+      title: "我国成功发射天链三号01星，发射任务取得圆满成功",
+      source: "央视新闻",
+      url: "https://news.cctv.com/"
+    },
+    {
+      title: "C919高原型首架机在上海浦东开展首次飞行试验，完成全部预定试飞科目",
+      source: "央视新闻",
+      url: "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=3750723320520739379&channelId=1119"
+    },
+    {
+      title: "国家网信办就《反网络暴力法（征求意见稿）》公开征求意见",
+      source: "央视新闻",
+      url: "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=3750723320520739379&channelId=1119"
+    },
+    {
+      title: "2026年度电影总票房突破220亿元，《飞驰人生3》暂列榜首",
+      source: "央视新闻",
+      url: "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=3750723320520739379&channelId=1119"
+    },
+    {
+      title: "中央宣传部授予国防科技大学研究员王戟“时代楷模”称号",
+      source: "央视新闻",
+      url: "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=3750723320520739379&channelId=1119"
+    },
+    {
+      title: "吉林汪清县防汛应急响应提升至一级，进入紧急防汛期并实施“五停”管控",
+      source: "央视新闻",
+      url: "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=3750723320520739379&channelId=1119"
+    },
+    {
+      title: "国产大模型Kimi K3宣布全量开源，总参数达2.8万亿为全球最大开源模型",
+      source: "央视新闻",
+      url: "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=3750723320520739379&channelId=1119"
+    },
+    {
+      title: "8月1日起《个人贷款业务明示综合融资成本规定》施行，贷款息费全面透明化",
+      source: "央视新闻",
+      url: "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=3750723320520739379&channelId=1119"
+    },
+    {
+      title: "日本熊本县6.8级地震遇难人数升至14人，多地基础设施受损",
+      source: "央视新闻",
+      url: "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=3750723320520739379&channelId=1119"
+    }
   ]
 };
