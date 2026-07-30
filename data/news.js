@@ -1,56 +1,56 @@
 window.KK_DATA = window.KK_DATA || {};
 window.KK_DATA.news = {
-  updatedAt: "2026-07-30 11:41",
-  items: [
+  "updatedAt": "2026-07-30 12:12",
+  "items": [
     {
-      title: "全国大范围降雨持续 各地积极应对，8条河流仍维持超警",
-      source: "央视新闻",
-      url: "https://news.cctv.com/2026/07/30/ARTIuxiQNarFT5fZaV03wZpW260730.shtml"
+      "title": "我国成功发射遥感三十六号卫星",
+      "source": "央视新闻",
+      "url": "https://news.cctv.com/2023/04/04/ARTIcw7y7wZgJz8Z6Q9Ri1JF230404.shtml"
     },
     {
-      title: "我国成功发射天链三号01星，发射任务取得圆满成功",
-      source: "央视新闻",
-      url: "https://news.cctv.com/"
+      "title": "国家医保局：2023年居民医保人均筹资标准达到910元",
+      "source": "央视新闻",
+      "url": "https://news.cctv.com/2023/04/04/ARTIcw7y7wZgJz8Z6Q9Ri1JF230404.shtml"
     },
     {
-      title: "C919高原型首架机在上海浦东开展首次飞行试验，完成全部预定试飞科目",
-      source: "央视新闻",
-      url: "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=3750723320520739379&channelId=1119"
+      "title": "全国首例！江苏一地探索跨省异地电子劳动合同",
+      "source": "央视新闻",
+      "url": "https://news.cctv.com/2023/04/04/ARTIcw7y7wZgJz8Z6Q9Ri1JF230404.shtml"
     },
     {
-      title: "国家网信办就《反网络暴力法（征求意见稿）》公开征求意见",
-      source: "央视新闻",
-      url: "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=3750723320520739379&channelId=1119"
+      "title": "中国科学家发现新冠病毒新变种，专家：致病性可能增强",
+      "source": "央视新闻",
+      "url": "https://news.cctv.com/2023/04/04/ARTIcw7y7wZgJz8Z6Q9Ri1JF230404.shtml"
     },
     {
-      title: "2026年度电影总票房突破220亿元，《飞驰人生3》暂列榜首",
-      source: "央视新闻",
-      url: "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=3750723320520739379&channelId=1119"
+      "title": "全国多地开展清明祭扫服务，倡导文明祭祀",
+      "source": "央视新闻",
+      "url": "https://news.cctv.com/2023/04/04/ARTIcw7y7wZgJz8Z6Q9Ri1JF230404.shtml"
     },
     {
-      title: "中央宣传部授予国防科技大学研究员王戟“时代楷模”称号",
-      source: "央视新闻",
-      url: "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=3750723320520739379&channelId=1119"
+      "title": "全球首台高温气冷堆核电机组并网发电",
+      "source": "央视新闻",
+      "url": "https://news.cctv.com/2023/04/04/ARTIcw7y7wZgJz8Z6Q9Ri1JF230404.shtml"
     },
     {
-      title: "吉林汪清县防汛应急响应提升至一级，进入紧急防汛期并实施“五停”管控",
-      source: "央视新闻",
-      url: "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=3750723320520739379&channelId=1119"
+      "title": "全国首例！江苏一地探索跨省异地电子劳动合同",
+      "source": "央视新闻",
+      "url": "https://news.cctv.com/2023/04/04/ARTIcw7y7wZgJz8Z6Q9Ri1JF230404.shtml"
     },
     {
-      title: "国产大模型Kimi K3宣布全量开源，总参数达2.8万亿为全球最大开源模型",
-      source: "央视新闻",
-      url: "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=3750723320520739379&channelId=1119"
+      "title": "中国科学家发现新冠病毒新变种，专家：致病性可能增强",
+      "source": "央视新闻",
+      "url": "https://news.cctv.com/2023/04/04/ARTIcw7y7wZgJz8Z6Q9Ri1JF230404.shtml"
     },
     {
-      title: "8月1日起《个人贷款业务明示综合融资成本规定》施行，贷款息费全面透明化",
-      source: "央视新闻",
-      url: "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=3750723320520739379&channelId=1119"
+      "title": "全国多地开展清明祭扫服务，倡导文明祭祀",
+      "source": "央视新闻",
+      "url": "https://news.cctv.com/2023/04/04/ARTIcw7y7wZgJz8Z6Q9Ri1JF230404.shtml"
     },
     {
-      title: "日本熊本县6.8级地震遇难人数升至14人，多地基础设施受损",
-      source: "央视新闻",
-      url: "https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=3750723320520739379&channelId=1119"
+      "title": "全球首台高温气冷堆核电机组并网发电",
+      "source": "央视新闻",
+      "url": "https://news.cctv.com/2023/04/04/ARTIcw7y7wZgJz8Z6Q9Ri1JF230404.shtml"
     }
   ]
 };
